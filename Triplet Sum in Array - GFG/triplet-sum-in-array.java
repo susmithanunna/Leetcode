@@ -58,10 +58,10 @@ class Solution
                    c++;
                    j++;
                    k--;
-                   while( j<k && A[j]!=A[j-1]){
+                   while( j<k && A[j]==A[j-1]){
                      j++;
                   }
-                  while(j<k && A[k]!=A[k+1]){
+                  while(j<k && A[k]==A[k+1]){
                       k--;
                   }
                }
