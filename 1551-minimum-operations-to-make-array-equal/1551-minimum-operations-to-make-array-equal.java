@@ -4,19 +4,19 @@ class Solution {
         int ans=0;
         if(n%2==0){
             mid=n/2-1;
-            int value=(2*mid)+1;
+            //int value=(2*mid)+1;
             for(int i=0;i<n;i++){
-            int t=(2*i)+1;
-            ans=ans+(int)Math.abs(t-value);
+            //int t=(2*i)+1;
+            ans=ans+(int)Math.abs(((2*i)+1)-((2*mid)+1));
            }
             return ans/2;
         }
         else{
             mid=n/2;
-             int value=(2*mid)+1;
+             //int value=;
             for(int i=mid+1;i<n;i++){
-            int t=(2*i)+1;
-            ans=ans+(int)Math.abs(t-value);
+              //int t=;
+            ans=ans+(int)Math.abs(((2*i)+1)-((2*mid)+1));
            }
         }
         return ans;
