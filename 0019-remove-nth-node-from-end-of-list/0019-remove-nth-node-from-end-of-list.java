@@ -17,8 +17,6 @@ class Solution {
             temp=temp.next;
         }
         int c=len-n;
-        
-        System.out.println(c);
         int count=1;
         temp=head;
         ListNode prev=null;
