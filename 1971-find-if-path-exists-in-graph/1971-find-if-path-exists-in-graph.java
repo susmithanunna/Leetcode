@@ -16,9 +16,6 @@ class Solution {
 
         ArrayList<Integer> a1=new ArrayList<>();
         dfs(source,adj,vis,a1);
-        for(int i=0;i<a1.size();i++){
-            System.out.print(a1.get(i)+" ");
-        }
         if(a1.contains(destination)){
             return true;
         }
