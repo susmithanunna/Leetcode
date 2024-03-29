@@ -13,12 +13,7 @@ class Solution {
             adj.get(u).add(v);
             adj.get(v).add(u);
         }
-        //int f=dfs(source,adj,vis);
-//         for(int i=source;i<=destination;i++){
-//             if(!vis[i]){
-//                 f=dfs(i,adj,vis);
-//             }
-//         }
+
         ArrayList<Integer> a1=new ArrayList<>();
         dfs(source,adj,vis,a1);
         for(int i=0;i<a1.size();i++){
@@ -33,9 +28,7 @@ class Solution {
         vis[v]=true;
       a1.add(v);
         for(Integer it:adj.get(v)){
-            //System.out.println("dfs::"+it);
             if(!vis[it]){
-               // c=it;
                 dfs(it,adj,vis,a1);
             }
         }
