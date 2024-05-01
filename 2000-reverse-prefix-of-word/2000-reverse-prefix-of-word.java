@@ -5,7 +5,7 @@ class Solution {
         for(int i=0;i<word.length();i++){
             if(ch==word.charAt(i)){
                 index=i+1;
-                System.out.println(index);
+                //System.out.println(index);
                  ans=word.charAt(i)+ans;
                 break;
             }
